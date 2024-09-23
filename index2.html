@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayPal Customer Service</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+        
+        .logo {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+        }
+        
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2em;
+        }
+        
+        .call-now-btn, .autodial-btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 1em 2em;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+        
+        .call-now-btn:hover, .autodial-btn:hover {
+            background-color: #0069d9;
+        }
+        
+        .autodial-btn {
+            margin-top: 1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="paypal-logo.png" alt="PayPal Logo" class="logo">
+        <p>Fair Use Policy</p>
+    </header>
+    <main>
+        <h1>PayPal Customer Service</h1>
+        <p>Need help with your PayPal account?</p>
+        <button class="call-now-btn">Call Now: +1 (888) 431-0993</button>
+        <button class="autodial-btn">Autodial</button>
+    </main>
+    <script>
+        const autodialBtn = document.querySelector('.autodial-btn');
+        autodialBtn.addEventListener('click', () => {
+            const phoneNumber = '+1 (888) 431-0993';
+            window.location.href = `tel:${phoneNumber}`;
+        });
+    </script>
+</body>
+</html>
