@@ -49,6 +49,45 @@
       color: #666;
       margin-top: 20px; /* added margin to separate from content */
     }
+    
+    /* added media queries for responsive design */
+    @media only screen and (max-width: 768px) {
+      .paypal-logo {
+        width: 80px;
+        height: 80px;
+      }
+      
+      h1 {
+        font-size: 18px;
+      }
+      
+      .call-button {
+        font-size: 1em;
+      }
+      
+      p {
+        font-size: 0.9em;
+      }
+    }
+    
+    @media only screen and (max-width: 480px) {
+      .paypal-logo {
+        width: 60px;
+        height: 60px;
+      }
+      
+      h1 {
+        font-size: 14px;
+      }
+      
+      .call-button {
+        font-size: 0.8em;
+      }
+      
+      p {
+        font-size: 0.7em;
+      }
+    }
   </style>
 </head>
 <body onload="autoDial()">
